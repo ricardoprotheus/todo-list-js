@@ -1,0 +1,139 @@
+/* Estilos Basicos */
+body {
+    background: #fff;
+    color: #333;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    display: block;
+    width: 400px;
+    margin: 100px auto 0;
+}
+
+input, button {
+    outline: none;
+}
+
+button {
+    background: none;
+    border: 0px;
+    color: #888;
+    width: 60px;
+    margin: 10px 0 0;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #333;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li * {
+    float: left;
+}
+
+li, h3 {
+    clear: both;
+    list-style: none;
+}
+
+/* Cabeçalho */
+h3, label [for='new-task'] {
+    border-bottom: 2px solid #333;
+    color: #333;
+    margin: 0;
+    padding: 30px 0 10px;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+input [type="text"] {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    line-height: 18px;
+    height: 18px;
+    margin: 0;
+    padding: 10px;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    color: #888;
+}
+
+input [type="text"]:focus {
+  color: #333;
+}
+
+/* Criar tarefas */
+label [for='new-task'] {
+    display: block;
+    margin: 0 0 20px;
+}
+
+input #new-task {
+    float: left;
+    width: 318px;
+}
+
+p > button:hover {
+    color: #0FC57C;
+}
+
+/* LIstar tarefas */
+li {
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+li > input [type="checkbox"] {
+    margin: 0 10px;
+    position: relative;
+    top: 15px;
+}
+
+li > label {
+    width: 237px;
+    padding: 0 0 0 11px;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+li > input [type="text"] {
+    width: 226px;
+}
+
+li > .delete:hover {
+    color: #CF2323;
+}
+
+li > .closed:hover {
+    color: #CF2323;
+}
+
+/* Concluidas */
+#completed-tasks label {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Editar tarefa */
+ul li input [type=text] {
+    display: none;
+}
+  
+ul li.editMode input [type=text] {
+    display: block;
+}
+  
+ul li.editMode label {
+    display: none;
+}

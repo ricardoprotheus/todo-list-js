@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styleApp.css" type="text/css" media="screen" charset="utf-8">     
+</head>
+<body>
+
+  <div class="container">
+      <p>
+          <label for="new-task">Criar tarefa</label>
+          <input id="new-task" type="text">
+          <button>Criar</button>
+      </p>
+
+      <h3>Pendentes</h3>
+      <ul id="incomplete-tasks">
+        <li><input type="checkbox"><label>Nova tarefa</label><input type="text"><button class="edit">Editar</button><button class="delete">Apagar</button><button class="closed">Encerrar</button></li>
+      </ul>
+
+      <h3>Concluidas</h3>
+      <ul id="complete-tasks">
+        <li><input type="checkbox" checked><label>Tarefa completa</label><input type="text"><button class="edit">Editar</button><button class="delete">Apagar</button><button class="closed">Encerrar</button></li>
+      </ul>
+  </div>  
+
+  <script type="text/javascript" src="src/app.js"></script>
+
+</body>
+
+</html>
